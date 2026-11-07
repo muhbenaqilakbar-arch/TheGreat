@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: whitesmoke;
+}
+
+.modal {
+  max-width: 1062px;
+  margin: 20px auto;
+  background: white;
+}
+
+
+.header {
+  background: darkred;
+  color: white;
+  width: 100%;
+  height: 50px;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h2 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.close {
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+
+.body {
+  display: flex;
+  padding: 20px 15px 30px;
+  gap: 15px;
+}
+
+.menu {
+  list-style: none;
+  width: 185px;
+  flex-shrink: 0;
+  padding-top: 11px;
+}
+
+.menu li {
+  font-size: 14.5px;
+  padding: 4px 10px;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.menu li span {
+  color: gray;
+}
+
+.menu li.active {
+  background: skyblue;
+  color: white;
+}
+
+.menu li.active span {
+  color: white;
+}
+
+.content {
+  flex: 1;
+}
+
+.label {
+  font-size: 13px;
+  color: gray;
+  margin-bottom: 6px;
+}
+
+
+.frame {
+  border: 1px solid lightblue;
+  box-shadow: 0 0 4px white;
+  padding: 15px 85px 17px;
+}
+
+a{
+  color: Black;
+  text-decoration: none;
+}
+
+.team {
+  background: white;
+  padding: 42px 28px 50px;
+  text-align: center;
+}
+
+.team h1 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.sub {
+  font-size: 11px;
+  margin-bottom: 15px;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.card {
+  flex: 1;
+  text-align: left;
+}
+
+.card img {
+  display: block;
+  height: 400px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: lightgray;
+}
+
+.card h3 {
+  font-size: 13px;
+  font-weight: 400;
+  margin: 15px 0 8px;
+}
+
+.card small {
+  display: block;
+  font-size: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 9px;
+  line-height: 1.45;
+}
+
+.icons {
+  margin-top: 12px;
+  color: lightgray;
+  font-size: 20px;
+}
+
+.icons i {
+  margin-right: 10px;
+}
+
+
+@media (max-width: 800px) {
+  .header {
+    width: 100%;
+  }
+  
+  .body {
+    flex-direction: column;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .frame {
+    padding: 10px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
